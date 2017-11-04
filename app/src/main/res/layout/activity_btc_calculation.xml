@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.example.simonwambua.currencycompare.Activity_BTC_Calculation">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter the Amount to be Converted to BTC" />
+
+
+    <EditText
+        android:id="@+id/currency_value"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@android:color/darker_gray"
+        android:inputType="number"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/rounded_button"
+        android:text="Calculate"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+
+        />
+
+    <TextView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Result" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/darker_gray"
+        android:inputType="number"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
